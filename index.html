@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <!-- Legătura către fișierul CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. Antetul și navigarea -->
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Secțiunea Destinații -->
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Paris</h3>
+                    <p><strong>Țara:</strong> Franța</p>
+                    <p>Orașul luminilor, faimos pentru cultură, gastronomie și istorie.</p>
+                    <p><em>Durată recomandată:</em> 5 zile</p>
+                </article>
+                <!-- Cardul evidențiat cu clasa "featured" -->
+                <article class="card featured">
+                    <h3>Roma</h3>
+                    <p><strong>Țara:</strong> Italia</p>
+                    <p>O incursiune în istoria antică cu monumente impresionante.</p>
+                    <p><em>Durată recomandată:</em> 4 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Kyoto</h3>
+                    <p><strong>Țara:</strong> Japonia</p>
+                    <p>Capitala istorică a Japoniei, plină de temple și tradiții.</p>
+                    <p><em>Durată recomandată:</em> 7 zile</p>
+                </article>
+                <article class="card">
+                    <h3>New York</h3>
+                    <p><strong>Țara:</strong> SUA</p>
+                    <p>Metropola zgârie-norilor care nu doarme niciodată.</p>
+                    <p><em>Durată recomandată:</em> 6 zile</p>
+                </article>
+                <article class="card">
+                    <h3>Lisabona</h3>
+                    <p><strong>Țara:</strong> Portugalia</p>
+                    <p>Orașul colinelor, faimos pentru priveliști și apusuri superbe.</p>
+                    <p><em>Durată recomandată:</em> 3 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Secțiunea Planifică (Formular) -->
+        <section id="planifica">
+            <h2>Planifică excursia</h2>
+            <form action="#" method="get">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege...</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Kyoto">Kyoto</option>
+                    <option value="New York">New York</option>
+                    <option value="Lisabona">Lisabona</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" required>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- 4. Secțiunea Recomandări -->
+        <section id="recomandari">
+            <h2>Recomandări de călătorie</h2>
+            <ul>
+                <li>Verificați valabilitatea pașaportului cu cel puțin 6 luni înainte de plecare.</li>
+                <li>Faceți o copie digitală a documentelor de călătorie.</li>
+                <li>Achiziționați o asigurare medicală de călătorie.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 5. Subsolul paginii -->
+    <footer class="site-footer">
+        <p>Nume Prenume, 2026</p>
+    </footer>
+</body>
+</html>
